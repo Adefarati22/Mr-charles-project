@@ -8,7 +8,7 @@ export default function RootLayout() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#F3F7FF]">
         <div className="container mx-auto py-5 px-4 flex justify-between items-center">
           <Logo />
-          <div className="flex gap-4 items-center">
+          <div className="md:flex gap-4 items-center hidden">
             <a href="#features" className="font-medium">
               Features
             </a>

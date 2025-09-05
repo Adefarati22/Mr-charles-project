@@ -8,27 +8,26 @@ export default function AuthProvider({ children }) {
   const [accessToken, setAccessToken] = useState(null);
   const [user, setUser] = useState(null);
 
+
   //query to refresh accessToken on app start
-  useQuery({
-    queryKey: ["refresh_token"],
-    queryFn: async () => {
-      const res = await refreshAccessToken();
-      if (res.status === 200) {
-        const newAccessToken = res.data?.data?.accessToken;
-        setAccessToken(newAccessToken);
-        return res;
-      } else {
-        setAccessToken(null);
-        return null;
-      }
-    },
-    onError: async (error) => {
-      console.error("Error refreshing token", error);
-      setAccessToken(null);
-    },
-    enabled: !accessToken,
-    retry: false,
-  });
+ const {isPending: isLoading, data: dataToken} = useQuery({
+  queryKey: ["refresh_token"],
+  queryFn: () => refreshAccessToken(),
+  onError: async (error) => {
+    console.error("Error refreshing accessToken", error);
+    setAccessToken(null);
+  },
+  enabled: !accessToken,
+  retry: false,
+ });
+
+ //set newAccessToken data
+ useEffect(() => {
+  if (dataToken?.status === 200) {
+    const newAccessToken = dataToken?.data?.data?.accessToken;
+    setAccessToken(newAccessToken)
+  }
+ }, [dataToken?.data?.data?.accessToken, dataToken?.status])
 
   //fetch auth user
   const { isPending, data } = useQuery({
@@ -40,13 +39,14 @@ export default function AuthProvider({ children }) {
     enabled: !!accessToken,
   });
 
+  //setUser data
   useEffect(() => {
     if (data?.status === 200) {
       setUser(data?.data?.data);
     }
   }, [data?.data?.data, data?.status]);
 
-  if (isPending && accessToken) {
+  if ((isPending && accessToken) || isLoading) {
     return <LazyLoader />;
   }
 

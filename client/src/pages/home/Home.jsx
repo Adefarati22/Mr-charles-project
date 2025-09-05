@@ -62,7 +62,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[23px] lg:text-[24px] mt-4">
               Appointment Scheduling
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Let patients book and reschedule appointments easily online with
               real-time availability and automated confirmations.
             </p>
@@ -76,7 +76,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4 leading-tight">
               Doctor & Department Management
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Manage staff availability, departmental organization, and resource
               allocation efficiently.
             </p>
@@ -90,7 +90,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Analytics Dashboard
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Get real-time insights into bookings, patient visits, revenue, and
               operational performance.
             </p>
@@ -105,7 +105,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Billing & Invoicing
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Generate invoices, track payments, and integrate with insurance
               providers seamlessly.
             </p>
@@ -119,7 +119,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Automated Reminders
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Send SMS and email alerts for appointments, follow-ups, and
               medication reminders automatically.
             </p>
@@ -133,7 +133,7 @@ export default function Home() {
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4 leading-tight">
               Electronic Medical Records
             </h1>
-            <p className=" md:text-sm pt-3">
+            <p className="text-sm pt-3">
               Store, access, and update patient records securely with
               comprehensive digital health documentation.
             </p>
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="mt-12 md:mt-15">
           <div className="hidden lg:block absolute top- bottom- left-1/2 h-[58rem] w-px bg-gray-300 transform translate-x-1/2 z-0" />
           {/* Part Div */}
-          <div className="md:flex md:flex-row items-center justify-between">
+          <div className="md:flex md:flex-row items-center justify-between bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -179,7 +179,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] mt-8">
+          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] mt-8 bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -202,7 +202,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex items-center justify-between  my-8">
+          <div className="md:flex items-center justify-between  my-8 bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -226,7 +226,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] ">
+          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
