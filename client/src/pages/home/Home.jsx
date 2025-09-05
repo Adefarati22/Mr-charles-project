@@ -1,5 +1,5 @@
 import useMetaArgs from "@/hooks/useMeta";
-import { RiBillFill, RiCalendarScheduleLine, RiDiscussFill, RiFileTextLine, RiNotification2Fill, RiUserHeartLine } from "@remixicon/react";
+import { RiBillFill, RiCalendarScheduleLine, RiDiscussFill, RiFileTextLine, RiLineChartLine, RiNotification2Fill, RiUserHeartLine } from "@remixicon/react";
 import React from "react";
 import { Link } from "react-router";
 
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="mt-12 md:mt-15">
           <div className="hidden lg:block absolute top- bottom- left-1/2 h-[58rem] w-px bg-gray-300 transform translate-x-1/2 z-0" />
           {/* Part Div */}
-          <div className="md:flex md:flex-row items-center justify-between bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
+          <div className="md:flex md:flex-row items-center justify-between col-span-12 rounded-xl hover:shadow-2xl md:hover:shadow-none p-2 lg:p-0 transition-all duration-300 ease-in-out">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -166,7 +166,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] mt-8 bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
+          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] mt-8 col-span-12 rounded-xl hover:shadow-2xl md:hover:shadow-none p-2 lg:p-0 transition-all duration-300 ease-in-out">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -189,7 +189,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex items-center justify-between  my-8 bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
+          <div className="md:flex items-center justify-between  my-8 col-span-12 rounded-xl hover:shadow-2xl md:hover:shadow-none p-2 lg:p-0 transition-all duration-300 ease-in-out">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
@@ -213,7 +213,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] bg-white col-span-12 rounded-xl shadow-2xl lg:shadow-none p-2 lg:p-0">
+          <div className="md:flex md:flex-row-reverse items-center justify-between gap-[15px] col-span-12 rounded-xl hover:shadow-2xl md:hover:shadow-none p-2 lg:p-0 transition-all duration-300 ease-in-out">
             <div className="">
               <div className="flex items-center gap-[12px]">
                 <h1 className="w-8 h-8 bg-[#1055F8] text-white text-center rounded-full p-1 md:p-1.5 font-semibold">
