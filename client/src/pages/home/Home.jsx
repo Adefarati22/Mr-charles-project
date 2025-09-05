@@ -1,5 +1,5 @@
 import useMetaArgs from "@/hooks/useMeta";
-import { RiDiscussFill } from "@remixicon/react";
+import { RiBillFill, RiCalendarScheduleLine, RiDiscussFill, RiFileTextLine, RiNotification2Fill, RiUserHeartLine } from "@remixicon/react";
 import React from "react";
 import { Link } from "react-router";
 
@@ -54,11 +54,9 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-12 container gap-4 lg:gap-6">
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#D5E2FF] rounded-full p-3"
-              src="appointment.png"
-              alt="formkit-icon"
-            />
+           <div className="bg-[#D5E2FF] rounded-full w-15 h-15 p-4">
+              <RiCalendarScheduleLine size={30} className="text-[#1055F8] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[23px] lg:text-[24px] mt-4">
               Appointment Scheduling
             </h1>
@@ -68,11 +66,9 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#FFD7FF] rounded-full p-3"
-              src="doctor.png"
-              alt="user-love-icon"
-            />
+            <div className="bg-[#FFD7FF] rounded-full w-15 h-15 p-4">
+              <RiUserHeartLine size={30} className="text-[#F805F8] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4 leading-tight">
               Doctor & Department Management
             </h1>
@@ -82,11 +78,9 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#DDFFDD] rounded-full p-3"
-              src="analytics.png"
-              alt="analytics-icon"
-            />
+          <div className="bg-[#DDFFDD] rounded-full w-15 h-15 p-4">
+              <RiLineChartLine size={30} className="text-[#02DB02] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Analytics Dashboard
             </h1>
@@ -96,12 +90,9 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#FFE2E2] rounded-full p-3"
-              src="billing.svg
-              "
-              alt="invoice-icon"
-            />
+          <div className="bg-[#FFE2E2] rounded-full w-15 h-15 p-4">
+              <RiBillFill size={30} className="text-[#FF0000] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Billing & Invoicing
             </h1>
@@ -111,11 +102,9 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#FFEFD2] rounded-full p-3"
-              src="reminders.svg"
-              alt="analytic-icon"
-            />
+          <div className="bg-[#FFEFD2] rounded-full w-15 h-15 p-4">
+              <RiNotification2Fill size={30} className="text-[#FFA500] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4">
               Automated Reminders
             </h1>
@@ -125,11 +114,9 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-gray-500 rounded-lg p-[40px] h-[296px]">
-            <img
-              className="bg-[#EBD7FF] rounded-full p-3"
-              src="electronic.svg"
-              alt="pepicons-icon"
-            />
+         <div className="bg-[#EBD7FF] rounded-full w-15 h-15 p-4">
+              <RiFileTextLine size={30} className="text-[#8100FA] " />
+            </div>
             <h1 className="font-semibold text-[22px] md:text-[24px] mt-4 leading-tight">
               Electronic Medical Records
             </h1>
